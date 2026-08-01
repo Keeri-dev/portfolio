@@ -1,0 +1,161 @@
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* TYPE SELECTOR */
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #bdc1c4;
+    color: #04246a;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ID SELECTOR */
+
+#hero {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+
+/* NAVIGATION */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* CLASS SELECTOR */
+
+.card {
+    background-color: white;
+    text-align: left;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 16px auto;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.skill-card {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    border: 1px solid #6a7ea7;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.skill-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: white;
+}
+
+.skill-list {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 24px;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 24px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

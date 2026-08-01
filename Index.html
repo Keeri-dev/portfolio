@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | My Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <header id="hero">
         <h1>My Portfolio</h1>
-        <p> <strong>Intended Color Palette:</strong> White, Light Gray, and Blue accents.<br>
-            <strong>Intended Font:</strong> Inter, sans-serif.
-        </p>
-
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About & Contact</a></li>
             </ul>
@@ -26,44 +29,52 @@
 
     <main>
         <section>
-            <h2>Welcome To My Portfolio</h2>
-            <p>Welcome! This is my personal portfolio website.</p>
+            <h2>Welcome To My Portfolio!</h2>
+            <p>Do stay a while and explore my work!</p>
         </section>
 
         <section>
             <h2>Featured Project</h2>
 
-            <article>
+            <article class="card">
                 <h3>Project Showcase</h3>
                 <p>Placeholder description for a featured project.</p>
             </article>
         </section>
 
-        <section>
+        <section class="skill-card">
             <h2>Skills</h2>
-            <div style="font-family: Inter, sans-serif; max-width: 800px; margin: 40px auto;">
-                <h2 style="font-size: 24px; margin-bottom: 16px;">Technical Skills & Certifications</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+            <div class="card">
+                <h2>Technical Skills & Certifications</h2>
+                <div class="skills-grid">
 
-                    <div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px;">
-                        <h3 style="margin:0 0 8px 0;">Certified in Data Management</h3>
-                        <p style="margin:0; color:#4b5563; font-size:14px;">Certified</p>
-                        <p style="margin:8px 0 0 0; font-size:14px;">Data Governance • Data Quality Assurance • Data
+                    <div class="skill-box">
+                        <h3>Certified in Data Management</h3>
+                        <p>Certified</p>
+                        <p>Data Governance • Data Quality Assurance • Data
                             Organization & Documentation</p>
                     </div>
 
-                    <div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px;">
-                        <h3 style="margin:0 0 8px 0;">Python</h3>
-                        <p style="margin:0; color:#4b5563; font-size:14px;">Proficient - Data Analysis & Automation</p>
-                        <p style="margin:8px 0 0 0; font-size:14px;">Data Cleaning • EDA • Scripting • Reporting</p>
+                    <div class="skill-box">
+                        <h3>Python</h3>
+                        <p>Proficient - Data Analysis & Automation</p>
+                        <p>Data Cleaning • EDA • Scripting • Reporting</p>
                     </div>
 
-                    <div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px;">
-                        <h3 style="margin:0 0 8px 0;">HTML</h3>
-                        <p style="margin:0; color:#4b5563; font-size:14px;">Web Reporting & Presentation</p>
-                        <p style="margin:8px 0 0 0; font-size:14px;">Structured Data Reports • Dashboard Layout</p>
+                    <div class="skill-box">
+                        <h3>SQL</h3>
+                        <p>Proficient - Data Querying & Management</p>
+                        <p>Database Querying • Data Extraction • Data
+                            Manipulation</p>
+                    </div>
+
+                    <div class="skill-box">
+                        <h3>HTML</h3>
+                        <p>Web Reporting & Presentation</p>
+                        <p>Structured Data Reports • Dashboard Layout</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
