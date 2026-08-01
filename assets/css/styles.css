@@ -113,6 +113,16 @@ nav a {
     margin-left: 24px;
 }
 
+.contact-info {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    border: 1px solid #6a7ea7;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 1200px;
+    text-align: center;
+}
+
 /* SECTIONS */
 
 section {
