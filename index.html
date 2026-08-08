@@ -22,7 +22,7 @@
 
     <header id="hero">
         <h1>Welcome to My Portfolio</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -34,7 +34,25 @@
     <main id="main-content">
         <section>
             <h2>My name is Keeri Caples</h2>
-            <p>Do stay a while and explore my work!</p>
+            <p>
+                I am an aspiring data analyst with experience in Python, SQL, data management,
+                and web development. This portfolio showcases my projects, certifications,
+                and technical skills as I continue to develop my expertise in analytics and technology.
+            </p>
+            <p>Do stay a while and explore my work! Explore my featured projects, technical certifications, and
+                programming experience to learn more about my journey in data analytics and technology.
+            </p>
+            <section>
+                <h3>What You Will Find in this Portfolio</h3>
+                <a href="assets/videos/data-coding-GIF-penguin.gif" class="profile-image"></a>
+                <img src="assets/videos/data-coding-GIF-penguin.gif" alt="Penguin Coding GIF" class="profile-image">
+                <ul class="intro-list">
+                    <li>Python Data Analysis Projects</li>
+                    <li>SQL Database Skills</li>
+                    <li>Professional Certifications</li>
+                    <li>Web Development Experience</li>
+                </ul>
+            </section>
         </section>
 
         <section>
@@ -44,6 +62,7 @@
                 <h3>Data Analysis Capstone Project with Python</h3>
 
                 <video controls poster="assets/images/python-capstone-thumbnail.jpg" class="project-video">
+                    aria-label="Data Analysis Capstone Project demonstration video">
                     <source src="assets/videos/python-capstone.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -57,15 +76,16 @@
         <section class="skill-card">
             <h2>Skills</h2>
             <div class="card">
-                <h2>Technical Skills & Certifications</h2>
-                <p>For a more extensive view of my credentials, please refer to my <a href="about.html">About &
+                <h3>Technical Skills & Certifications</h3>
+                <p>For a more extensive view of my credentials, please refer to my LinkedIn located in the <a
+                        href="about.html">About &
                         Contact</a> section
                     and
-                    follow the links.</p>
+                    follow the links.
                 </p>
                 <div class="skills-grid">
 
-                    <div class="skill-box">
+                    <article class="skill-box">
                         <h3>Certified in Data Management</h3>
                         <p>
                             <a href="assets/images/data-visualization-cert.jpg" target="_blank">
@@ -83,9 +103,9 @@
                         </p>
                         <p>Data Governance • Data Quality Assurance • Data
                             Organization & Documentation</p>
-                    </div>
+                    </article>
 
-                    <div class="skill-box">
+                    <article class="skill-box">
                         <h3>Python</h3>
                         <p>
                             <a href="assets/images/cs50s-python-cert.jpg" target="_blank">
@@ -104,9 +124,9 @@
                         </p>
                         <p>Proficient - Data Analysis & Automation</p>
                         <p>Data Cleaning • EDA • Scripting • Reporting • Cybersecurity</p>
-                    </div>
+                    </article>
 
-                    <div class="skill-box">
+                    <article class="skill-box">
                         <h3>SQL</h3>
                         <p>
                             <a href="assets/images/intro-sql-cert.jpg" target="_blank">
@@ -125,7 +145,7 @@
                         <p>Proficient - Data Querying & Management</p>
                         <p>Database Querying • Data Extraction • Data
                             Manipulation</p>
-                    </div>
+                    </article>
 
                     <div class="skill-box">
                         <h3>HTML</h3>

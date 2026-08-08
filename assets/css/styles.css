@@ -24,6 +24,7 @@ h3 {
     margin: 0 0 16px 0;
     font-weight: 600;
     text-align: center;
+    color: white;
 }
 
 /* ID SELECTOR */
@@ -76,6 +77,18 @@ nav a:focus {
     outline: 3px solid #facc15;
 }
 
+.intro-list {
+    list-style: bullet;
+    margin-top: 16px;
+    list-style-position: inside;
+    border: 2px solid #04246a;
+}
+
+.intro-list li {
+    margin: 8px 0;
+    text-align: center;
+}
+
 form {
     max-width: 600px;
     margin: auto;
@@ -90,15 +103,15 @@ fieldset {
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 8px;
     font-weight: bold;
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 16px;
+    margin-top: 8px;
 }
 
 button {
@@ -106,8 +119,8 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
+    margin-top: 16px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -176,9 +189,9 @@ textarea:focus {
 
 .skill-box {
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 24px;
-    background-color: white;
+    background-color: #04246a;
     text-align: center;
 }
 
@@ -206,10 +219,10 @@ textarea:focus {
 .skip-link:focus {
     left: 10px;
     top: 10px;
-    background: white;
-    color: #04246a;
-    padding: 10px;
-    border-radius: 5px;
+    background: #6a7ea7;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
     z-index: 1000;
 }
 
@@ -219,7 +232,7 @@ textarea:focus {
     max-width: 600px;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 24px auto;
     border-radius: 8px;
 }
 
@@ -227,7 +240,7 @@ textarea:focus {
     max-width: 260px;
     height: auto;
     display: sqaure;
-    margin: 20px auto;
+    margin: 24px auto;
     border-radius: 8px;
     text-align: center;
 }
