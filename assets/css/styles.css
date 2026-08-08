@@ -17,7 +17,8 @@ body {
     text-align: center;
 }
 
-h1 {
+h1,
+h4 {
     font-family: 'Merriweather', serif;
     color: #ffffff;
     font-weight: 700;
@@ -133,14 +134,15 @@ textarea:focus {
 /* CLASS SELECTOR */
 
 .card {
-    background-color: #6a7ea7;
+    background-color: #9399a5;
     text-align: center;
     border: 1px solid #dbeafe;
     border-radius: 8px;
     padding: 24px;
     margin-bottom: 24px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: #04246a;
+    font-weight: bold;
 }
 
 .card:hover {
@@ -197,6 +199,7 @@ textarea:focus {
     padding: 24px;
     background-color: #04246a;
     text-align: center;
+    color: white;
 }
 
 .skill-list {
