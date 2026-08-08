@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 /* TYPE SELECTOR */
 
 body {
@@ -30,6 +36,31 @@ h3 {
     font-family: 'Merriweather', serif;
     color: #04246a;
     font-weight: 700;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px;
+    margin-top: 8px;
 }
 
 /* ID SELECTOR */
@@ -80,31 +111,6 @@ nav a:focus {
     background-color: #2563eb;
     transform: translateY(-2px);
     outline: 3px solid #facc15;
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;
-}
-
-fieldset {
-    border: 2px solid #2563eb;
-    border-radius: 8px;
-    padding: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 8px;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 16px;
-    margin-top: 8px;
 }
 
 button {
@@ -200,6 +206,7 @@ textarea:focus {
     background-color: #04246a;
     text-align: center;
     color: white;
+    overflow-wrap: break-word;
 }
 
 .skill-list {
@@ -244,12 +251,12 @@ textarea:focus {
 }
 
 .badge {
+    width: 100%;
     max-width: 260px;
     height: auto;
     display: block;
     margin: 24px auto;
     border-radius: 8px;
-    text-align: center;
 }
 
 .error-message {
@@ -308,4 +315,9 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
