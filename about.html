@@ -16,6 +16,10 @@
 
 <body>
 
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
     <header id="hero">
         <h1>About & Contact</h1>
 
@@ -40,7 +44,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section>
             <h2>About Me</h2>
             <img src="assets/images/headshot.jpg" alt="Keeri Caples Headshot" class="profile-image">
@@ -55,13 +59,13 @@
             </p>
 
             <p>I'm passionate about how good data can improve systems and support better decisions. My portfolio
-                includes projects focused on [REMINDER:add 1-2 examples - e.g., Python data cleaning scripts,
-                exploratory data
-                analysis, HTML dashboard mockups].
+                includes projects focused on Python, R, & SQL data cleaning scripts, exploratory data analysis, and
+                Power BI
+                dashboard mockups.
             </p>
 
-            <p>I'm seeking an entry-level Data Analyst or IT role where I can bring strong analytical thinking,
-                attention to detail, and a commitment to learning.
+            <p>I'm seeking an entry-level Data Analyst or IT role where I can bring in my strong analytical thinking,
+                attention to detail, customer service orientation, and a commitment to learning.
             </p>
         </section>
 
@@ -93,7 +97,7 @@
         </section>
 
         <section class="contact-info">
-            <h2>Contact Information</h2>
+            <h2>My Contact Information</h2>
             <p>Email:
                 <a href="mailto:Keeric25@gmail.com">
                     Keeric25@gmail.com
@@ -109,6 +113,31 @@
                     Keeri Caples
                 </a>
             </p>
+
+            <section>
+                <h3>Contact Form</h3>
+                <form action="mailto:Keeric25@gmail.com" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Send me a message:</legend>
+
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </p>
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+                </form>
+            </section>
         </section>
     </main>
 

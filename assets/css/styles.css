@@ -43,6 +43,7 @@ h3 {
 }
 
 
+
 /* NAVIGATION */
 
 nav ul {
@@ -59,18 +60,88 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: 500;
+
+    background-color: rgba(44, 52, 88, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    outline: 3px solid #facc15;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #04246a;
+}
+
+/* Keyboard Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #facc15;
+    outline-offset: 3px;
 }
 
 /* CLASS SELECTOR */
 
 .card {
-    background-color: white;
+    background-color: #6a7ea7;
     text-align: left;
     border: 1px solid #dbeafe;
     border-radius: 8px;
     padding: 24px;
     margin-bottom: 24px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
 }
 
 .profile-image {
@@ -78,17 +149,12 @@ nav a {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin: 16px auto;
+    margin: 24px auto;
 }
 
 .active {
-    border-bottom: 2px solid white;
-}
-
-.card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-4px);
-    transition: all 0.3s ease;
+    background-color: #04246a;
+    border: 2px solid white;
 }
 
 .skills-grid {
@@ -113,6 +179,7 @@ nav a {
     border-radius: 12px;
     padding: 24px;
     background-color: white;
+    text-align: center;
 }
 
 .skill-list {
@@ -124,10 +191,44 @@ nav a {
 .contact-info {
     font-family: 'Inter', sans-serif;
     background-color: white;
-    border: 1px solid #6a7ea7;
+    border: 4px solid #6a7ea7;
     border-radius: 8px;
     padding: 24px;
     max-width: 1200px;
+    text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: white;
+    color: #04246a;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.project-video {
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.badge {
+    max-width: 260px;
+    height: auto;
+    display: sqaure;
+    margin: 20px auto;
+    border-radius: 8px;
     text-align: center;
 }
 
