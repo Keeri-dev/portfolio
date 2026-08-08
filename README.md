@@ -8,10 +8,11 @@
 - Added an aria-label to the main navigation for screen reader users for smoother accessiblity.
 - Used semantic HTML elements including header, nav, main, section, article, and footer.
 - Structured headings using hierarchy (h1, h2, h3) to improve screen readers navigation.
-- Verified all text and background color combinations meet WCAG AA contrast requirements using the WebAIM Contrast Checker multiple times.
 - Added labels to all the form fields on the Contact page.
 - Added a fieldset and legend to the Contact form to group related controls and further accessiblity.
 - Tested navigation using only the keyboard and confirmed all interactive elements can be reached using the Tab key serveral times. 
+- Added a Subject field onto the form so the contact form contains four properly labeled fields.
+- Added accessible error message connected to form fields using aria-describedby so screen readers can identify feedback correctly. 
 
 # Gestalt Principles
 
