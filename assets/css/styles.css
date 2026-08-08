@@ -29,7 +29,14 @@ h3 {
 /* ID SELECTOR */
 
 #hero {
-    background-color: #1e3a8a;
+    background-image: url("../images/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
     color: white;
     padding: 24px 20px;
     text-align: center;
@@ -46,6 +53,7 @@ nav ul {
     gap: 24px;
     flex-direction: column;
 }
+
 
 nav a {
     text-decoration: none;
@@ -135,7 +143,7 @@ section {
 /* FOOTER */
 
 footer {
-    background-color: #1e3a8a;
+    background-color: #2C3458;
     color: white;
     text-align: center;
     padding: 24px;
