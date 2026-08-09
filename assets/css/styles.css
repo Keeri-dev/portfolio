@@ -211,7 +211,8 @@ textarea:focus {
 
 .skill-list {
     list-style-type: disc;
-    text-align: left;
+    text-align: center;
+    list-style-position: inside;
     margin-left: 24px;
 }
 
