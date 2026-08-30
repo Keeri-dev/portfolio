@@ -271,6 +271,15 @@ textarea:focus {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
+
+.input-error,
+textarea.error {
+    border: 2px solid #b91c1c;
+}
+
 /* SECTIONS */
 
 section {

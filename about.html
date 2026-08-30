@@ -7,6 +7,7 @@
     <title>About &amp; Contact | My Portfolio</title>
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -60,7 +61,11 @@
         <section>
             <h2>Experience &amp; Skills</h2>
 
-            <article class="card">
+            <button id="toggle-skills" aria-expanded="true">
+                Hide Technical Skills
+            </button>
+
+            <article class="card" id="skills-section">
                 <h3>Technical Skills</h3>
                 <ul class="skill-list">
                     <li>Programming &amp; Analysis, Python, Data Cleaning, Data Analysis</li>
@@ -94,7 +99,7 @@
 
             <section>
                 <h3>Contact Form</h3>
-                <form action="mailto:Keeric25@gmail.com" method="post" enctype="text/plain">
+                <form id="contact-form" action="mailto:Keeric25@gmail.com" method="post" enctype="text/plain">
                     <fieldset>
                         <legend>Send me a message:</legend>
 
