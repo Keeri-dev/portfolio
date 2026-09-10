@@ -1,4 +1,5 @@
 // DOM INTERACTION
+
 const toggleButton = document.querySelector("#toggle-skills");
 const skillsSection = document.querySelector("#skills-section");
 
@@ -18,6 +19,7 @@ if (toggleButton && skillsSection) {
 }
 
 // FORM VALIDATION
+
 const form = document.querySelector("#contact-form");
 
 if (form) {
