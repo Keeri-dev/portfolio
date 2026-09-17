@@ -275,7 +275,7 @@ textarea:focus {
     display: none;
 }
 
-.input-error,
+input-error,
 textarea.error {
     border: 2px solid #b91c1c;
 }

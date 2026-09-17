@@ -47,6 +47,8 @@ if (form) {
         }
     ];
 
+    const status = document.querySelector("#form-status");
+
     form.addEventListener("submit", (event) => {
         let valid = true;
 
@@ -71,6 +73,9 @@ if (form) {
 
         if (!valid) {
             event.preventDefault();
+
+            status.textContent =
+                "Please correct the highlighted fields.";
         }
     });
 
